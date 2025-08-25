@@ -5,7 +5,7 @@ class StockManagementView(tk.Tk):
     def __init__(self):
         super().__init__()
         self.title("Gestión de Stock")
-        self.geometry("700x500")
+        self.state("zoomed")  # Maximiza la ventana
         self.products = []  # Lista para almacenar los productos
         self.create_widgets()
 
